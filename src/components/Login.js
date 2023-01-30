@@ -2,6 +2,30 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import styled from 'styled-components';
+//스타일
+const MainDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    width: 50%;
+
+`
+const Label = styled.p`
+    size: 10px;
+`
+const Input = styled.input`
+    width: 250px;
+    border-color: lightblue;
+    height: 30px;
+`
+const LoginButton = styled.button`
+    margin: 15px;
+    width: 200px;
+    height: 30px;
+`
+
+
 
 function Login() {
     const [id, setId] = useState("");
@@ -41,21 +65,24 @@ function Login() {
     }
 
     return (
-        <div>
+        <MainDiv>
             <form onSubmit={onSubmitHandler}>
-                <label>ID</label>
-                <input type="text" value={id} onChange={onIdHandler}/>
-                <label>PW</label>
-                <input type="text" value={pw} onChange={onPwHandler}/>
-                <button type='sudmit'>
+                <div>
+                    <Label>ID</Label>
+                    <Input type="text" value={id} onChange={onIdHandler}/>
+                    <Label>PW</Label>
+                    <Input type="password" value={pw} onChange={onPwHandler}/>
+                </div>
+                
+                <LoginButton type='sudmit'>
                     로그인
-                </button>
+                </LoginButton>
                 
             </form>
-            <button  onClick={aaa}>
-                    박하민이 잘못했다...
-                </button>
-        </div>
+            <LoginButton  onClick={aaa}>
+                    aaa
+                </LoginButton>
+        </MainDiv>
     );
 }
 
