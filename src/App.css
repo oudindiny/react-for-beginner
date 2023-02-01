@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Humanbumsuk";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Humanbumsuk";
+  min-height: 100vh; /* 웹 스크린의 100%를 최소 높이로 갖겠다 */
+  margin: 0px;
+}
+
+/* Form */
+.Form input {
+  border: none;
+  padding: 10px;
+}
+.Form button {
+  margin-top: 30px;
+  font-family: "Humanbumsuk";
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 177, 170);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
