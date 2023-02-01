@@ -1,7 +1,5 @@
 import React from "react";
 
-const Login = () => {
+const Button = () => {
   return <div></div>;
 };
-
-export default Login;
