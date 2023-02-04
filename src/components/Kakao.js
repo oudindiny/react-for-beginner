@@ -26,19 +26,10 @@ const Kakao = () => {
       });
     });
 
-    const content = '<div className="content">content</div>';
-    const removeable = true;
-
-    const infowindow = new kakao.maps.InfoWindow({
-      content: content,
-      removable: removeable,
-    });
-    // 마커에 클릭이벤트를 등록합니다
-    kakao.maps.event.addListener(marker, "click", function() {
-      // 마커 위에 인포윈도우를 표시합니다
-      infowindow.open(map, marker);
-    });
+    const hos1 = state.map((it) => it.TREAT_SBJECT_CONT.split(" "));
+    console.log(hos1);
   }, []);
+
   return (
     <div
       id="map"
