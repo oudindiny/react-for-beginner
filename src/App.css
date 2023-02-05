@@ -1,16 +1,15 @@
 @font-face {
-  font-family: "Humanbumsuk";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2")
-    format("woff2");
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  background-color: antiquewhite;
+  background-color: #006cb5;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Humanbumsuk";
+
+  font-family: "GmarketSansMedium";
   min-height: 100vh; /* 웹 스크린의 100%를 최소 높이로 갖겠다 */
   margin: 0px;
 }
@@ -22,11 +21,57 @@ body {
 }
 .Form button {
   margin-top: 30px;
-  font-family: "Humanbumsuk";
+  font-family: "GmarketSansMedium";
   width: 100%;
   padding: 10px;
   background-color: rgb(255, 177, 170);
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+/* MainPage */
+.MainPage {
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.MainPage .mid {
+  display: flex;
+  justify-content: space-between;
+}
+.MainPage .left {
+  margin-right: 200px;
+  width: 20%;
+}
+.MainPage .left .color_grey {
+  color: #767676;
+  font-size: 20px;
+}
+.MainPage .left .color_blue {
+  color: #006cb5;
+  font-weight: bold;
+  font-size: 30px;
+}
+.MainPage .right {
+  width: 90%;
+}
+.MainPage .main_button {
+  width: 30%;
+  margin: 20px;
+  box-shadow: 1px 1px 2px 2px #767676;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.MainPage img {
+  width: 70%;
+}
+.MainPage .main_button .main_text {
+  font-size: 30px;
+  font-family: "GmarketSansMedium";
 }

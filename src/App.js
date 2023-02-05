@@ -8,15 +8,15 @@ import Menu from "./components/Menu";
 import axios from "axios";
 import XMLParser from "react-xml-parser";
 import "./App.css";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
     <div>
-      <Home />
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<MainPage />} />
         </Routes>
       </Router>
     </div>
