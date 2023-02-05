@@ -10,6 +10,7 @@ const MainPage = () => {
           <p className="color_grey">
             어서오세요 <p className="color_blue">접수</p> 도와드리겠습니다.
           </p>
+          <img src="assets/hospital.png" />
         </div>
 
         <div className="right">
