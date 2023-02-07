@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="MainPage">
       <div className="top"></div>
@@ -14,12 +16,12 @@ const MainPage = () => {
         </div>
 
         <div className="right">
-          <button className="main_button">
+          <button className="main_button" onClick={() => navigate("/new")}>
             <img src="assets/mainButtonImage1.png" />
             <p>저희 병원에 처음 방문하셨나요?</p>
             <p className="main_text">초진 접수</p>
           </button>
-          <button className="main_button">
+          <button className="main_button" onClick={() => navigate("/old")}>
             <img src="assets/mainButtonImage2.png" />
             <p>저희 병원에 오신 적 있으신가요?</p>
             <p className="main_text">재진 접수</p>
