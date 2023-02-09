@@ -84,3 +84,32 @@ body {
   font-size: 30px;
   font-family: "GmarketSansMedium";
 }
+
+/* Old */
+.Old {
+  min-width: 1500px;
+  margin: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Old .left {
+  width: 40%;
+  align-items: center;
+}
+.Old .left .tel_box {
+  width: 200px;
+  background-color: white;
+}
+.Old .right {
+  width: 60%;
+  align-items: center;
+}
+.Old .right .tel_number {
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
