@@ -96,10 +96,19 @@ body {
 .Old .left {
   width: 40%;
   align-items: center;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+.Old .left p {
+  font-size: 50px;
 }
 .Old .left .tel_box {
   width: 200px;
-  background-color: white;
+}
+.Old .left .tel_box p {
+  font-size: 40px;
+  color: #ffffff;
 }
 .Old .right {
   width: 60%;
