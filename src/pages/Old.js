@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 const Old = () => {
-  const [tel, setTel] = useState(" ");
+  const [tel, setTel] = useState("010-1234-5678");
 
   //tel.replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`);
 
   return (
     <div className="Old">
       <div className="left">
-        <p>전화번호를 입력해주세요 :) </p>
+        <p>전화번호를 입력해주세요 </p>
         <div className="tel_box">
           <p>{tel}</p>
         </div>
@@ -91,9 +91,11 @@ const Old = () => {
           >
             0
           </button>
+          <button className="nextButton">
+            <span>다음</span>
+          </button>
         </div>
       </div>
-      <button> 다음 </button>
     </div>
   );
 };

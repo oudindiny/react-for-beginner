@@ -9,6 +9,7 @@ import MainPage from "./pages/MainPage";
 import New from "./pages/New";
 import Old from "./pages/Old";
 import Admin from "./pages/Admin";
+import Kakao from "./components/Kakao";
 
 function App() {
   return (

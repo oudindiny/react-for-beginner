@@ -104,7 +104,8 @@ body {
   font-size: 50px;
 }
 .Old .left .tel_box {
-  width: 200px;
+  width: 400px;
+  height: 50vh;
 }
 .Old .left .tel_box p {
   font-size: 40px;
@@ -121,6 +122,26 @@ body {
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  align-items: center;
+  margin: 5px;
+}
+.Old .right .tel_number:hover {
+  background-color: #767676;
+  color: #ffffff;
+}
+.Old .right .nextButton {
+  width: 130px;
+  border: none;
+  background-color: #ffffff;
+  margin-left: 20px;
+  padding: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.Old .right .nextButton:hover {
+  background-color: #767676;
+  color: #ffffff;
 }
 
 /* Header */
@@ -133,4 +154,7 @@ body {
 .Header .dropdown-btn {
 }
 .Header .dropdown-submenu {
+}
+.Header .dropdown-submenu a {
+  display: block;
 }

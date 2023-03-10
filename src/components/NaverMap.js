@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useRef } from "react";
+import dataSet from "./../dataSet.json";
 
 const NaverMap = () => {
   const mapElement = useRef(null);
@@ -8,7 +9,7 @@ const NaverMap = () => {
     const { naver } = window;
 
     if (!mapElement.current || !naver) return;
-
+    const state = dataSet.filter((it) => it.BSN_STATE_NM === "영업중"); //영업중인 병원
     // 지도에 표시할 위치의 위도와 경도 좌표를 파라미터로 넣어줍니다.
     const location = new naver.maps.LatLng(37.5656, 126.9769);
 
