@@ -8,7 +8,7 @@ const Kakao = () => {
     const container = document.getElementById("map");
 
     const options = {
-      center: new kakao.maps.LatLng(37.56682, 126.97865),
+      center: new kakao.maps.LatLng(37.5031495814, 126.7817606485),
       level: 10,
     };
     const map = new kakao.maps.Map(container, options);

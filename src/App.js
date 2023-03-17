@@ -10,6 +10,8 @@ import New from "./pages/New";
 import Old from "./pages/Old";
 import Admin from "./pages/Admin";
 import Kakao from "./components/Kakao";
+import Data from "./components/Data";
+import OldSecond from "./pages/OldSecond";
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/new" element={<New />} />
-          <Route path="/old" element={<Old />} />
+          <Route path="/old" element={<OldSecond />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>

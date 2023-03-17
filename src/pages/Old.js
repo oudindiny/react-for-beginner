@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
 const Old = () => {
-  const [tel, setTel] = useState("010-1234-5678");
+  const [tel, setTel] = useState([]);
 
-  //tel.replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`);
+  useEffect(() => {
+    console.log(tel);
+  }, [tel]);
 
   return (
     <div className="Old">

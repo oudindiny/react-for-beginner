@@ -11,7 +11,7 @@ const NaverMap = () => {
     if (!mapElement.current || !naver) return;
     const state = dataSet.filter((it) => it.BSN_STATE_NM === "영업중"); //영업중인 병원
     // 지도에 표시할 위치의 위도와 경도 좌표를 파라미터로 넣어줍니다.
-    const location = new naver.maps.LatLng(37.5656, 126.9769);
+    const location = new naver.maps.LatLng(37.5031495814, 126.7817606485);
 
     const mapOptions: naver.maps.MapOptions = {
       center: location,
@@ -28,6 +28,8 @@ const NaverMap = () => {
     });
   }, []);
 
-  return <div ref={mapElement} style={{ minHeight: "400px" }} />;
+  return (
+    <div ref={mapElement} style={{ minHeight: "400px", width: "400px" }} />
+  );
 };
 export default NaverMap;
